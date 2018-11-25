@@ -6,8 +6,7 @@ class News_model extends CI_Model {
   }
 
   public function get_news($slug = FALSE) {
-    if ($slug === FALSE)
-    {
+    if ($slug === FALSE) {
       $query = $this->db->get('news');
       return $query->result_array();
     }
